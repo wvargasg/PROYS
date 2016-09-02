@@ -121,6 +121,14 @@ public class AppController {
 	public String PerfilesPOST() {
 		return "configuracion/Perfil";
 	}
+	@RequestMapping(value = { "/Usuarios" }, method = RequestMethod.GET)
+	public String UsuariosGET() {
+		return "configuracion/Usuario";
+	}
+	@RequestMapping(value = { "/Usuarios" }, method = RequestMethod.POST)
+	public String UsuariosPOST() {
+		return "configuracion/Usuario";
+	}
 	/*
 	 * 
 	 */
