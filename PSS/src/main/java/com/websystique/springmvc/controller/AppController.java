@@ -111,12 +111,20 @@ public class AppController {
 		return "Giro";
 	}
 	/*
-	 * This method will provide the medium to add a new employee.
+	 * Configuración
 	 */
 	@RequestMapping(value = { "/Perfiles" }, method = RequestMethod.GET)
-	public String Perfiles() {
+	public String PerfilesGET() {
 		return "configuracion/Perfil";
 	}
+	@RequestMapping(value = { "/Perfiles" }, method = RequestMethod.POST)
+	public String PerfilesPOST() {
+		return "configuracion/Perfil";
+	}
+	/*
+	 * 
+	 */
+	
 	@RequestMapping(value = { "/Contacto" }, method = RequestMethod.POST)
 	public String Contacto() {
 		return "Contacto";
